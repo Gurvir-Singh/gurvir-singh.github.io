@@ -3,13 +3,15 @@
 
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A small portfolio page for Gurvir Singh built for a course assignment.">
     <meta name="author" content="Gurvir Singh">
-    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="Main.js" defer></script>
     <title>Portfolio Webpage for Gurvir Singh</title>
     <style>
         td,
@@ -18,27 +20,27 @@
             text-align: left;
             padding: 8px;
         }
-
-
     </style>
 </head>
 
 <body>
     <header>
-        <nav>
+
+        <!-- <nav>
             <a href="#AboutMe">About Me</a>
             <a href="#MySkills">My Skills</a>
             <a href="#MyExperience">My Experience</a>
             <a href="#MyCertifications">My Certifications</a>
             <a href="#ContactMe">Contact Me</a>
-        </nav>
+        </nav> -->
     </header>
     <main>
         <div id="Bio">
             <div id="contentLeft">
                 <h1>Gurvir Singh</h1>
                 <img src="https://media.licdn.com/dms/image/v2/D4E03AQECAjdkPXsSWw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1673016091201?e=1770854400&v=beta&t=EPoj9a8iAtmDwIEW3wAcocYoxVaqrk9JEEiNhVeWcmI"
-                    width="400" height="400" loading="lazy" alt="Image of me and my dog" style="box-shadow: 5px 10px  rgb(180, 188, 190);"/>
+                    width="400" height="400" loading="lazy" alt="Image of me and my dog"
+                    style="box-shadow: 5px 10px  rgb(180, 188, 190);" />
                 <p>Hello and welcome to my portfolio!</p>
             </div>
             <div id="contentRight">
@@ -90,62 +92,77 @@
             </aside> -->
 
         </div>
-        <div class="GridContainer">
-            <div id="MySkills">
-                <article>
-                    <h2>My Skills</h2>
-                    <ul>
-                        <li>C++, C#, Python, Javascript, Java</li>
-                        <li>Troubleshooting and fixing Windows, MacOS, and Linux systems</li>
-                        <li>General IT skills and implementation of secure networks</li>
-                        <li>Excellent IT skills and help desk skills</li>
-                        <li>Highly motivated and a very quick learner</li>
-                        <li>Excellent Communication Skills</li>
-                    </ul>
-                </article>
-            </div>
-            <div id="MyExperience">
-                <article>
-                    <h2>My Experience</h2>
-                    <table>
-                        <tr>
-                            <th>Company</th>
-                            <th>Period of Employment</th>
-                            <th>Description</th>
-                        </tr>
-                        <tr>
-                            <td>Walmart</td>
-                            <td>Sep 2023 - Apr 2024</td>
-                            <td>Stocked Shelves</td>
-                        </tr>
-                        <tr>
-                            <td>Comcast</td>
-                            <td>Jun 2024 - Aug 2024</td>
-                            <td>6 week internship involving javascript and python work</td>
-                        </tr>
-                        <tr>
-                            <td>Giant</td>
-                            <td>Dec 2024 - Oct 2025</td>
-                            <td>Deli worker, cut meat/cheese for customers</td>
-                        </tr>
-                        <tr>
-                            <td>Top Star Express</td>
-                            <td>Oct 2025 - Current</td>
-                            <td>Convenience Store Clerk</td>
-                        </tr>
-                    </table>
-                </article>
-            </div>
-            <div id="MyCertifications">
-                <article>
-                    <h2>My Certifications</h2>
-                    <ul>
-                        <li>Currently working on a CompTIA Security+ Certificate</li>
-                    </ul>
-                </article>
-            </div>
-            <div id="Resume">
-                
+
+        <!-- <div class="GridContainer">
+            
+            
+            
+            
+        </div> -->
+
+        <div id="dynamicView">
+            <nav>
+                <button type="button" id="SkillsButton">My Skills</button>
+                <button type="button" id="ExpButton">My Experience</button>
+                <button type="button" id="CertButton">My Certifications</button>
+                <button type="button" id="ResumeButton">Resume</button>
+            </nav>
+            <div id="dynamicContent">
+                <div id="MySkills">
+                    <article>
+                        <h2>My Skills</h2>
+                        <ul>
+                            <li>C++, C#, Python, Javascript, Java</li>
+                            <li>Troubleshooting and fixing Windows, MacOS, and Linux systems</li>
+                            <li>General IT skills and implementation of secure networks</li>
+                            <li>Excellent IT skills and help desk skills</li>
+                            <li>Highly motivated and a very quick learner</li>
+                            <li>Excellent Communication Skills</li>
+                        </ul>
+                    </article>
+                </div>
+                <div id="MyExperience">
+                    <article>
+                        <h2>My Experience</h2>
+                        <table>
+                            <tr>
+                                <th>Company</th>
+                                <th>Period of Employment</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>Walmart</td>
+                                <td>Sep 2023 - Apr 2024</td>
+                                <td>Stocked Shelves</td>
+                            </tr>
+                            <tr>
+                                <td>Comcast</td>
+                                <td>Jun 2024 - Aug 2024</td>
+                                <td>6 week internship involving javascript and python work</td>
+                            </tr>
+                            <tr>
+                                <td>Giant</td>
+                                <td>Dec 2024 - Oct 2025</td>
+                                <td>Deli worker, cut meat/cheese for customers</td>
+                            </tr>
+                            <tr>
+                                <td>Top Star Express</td>
+                                <td>Oct 2025 - Current</td>
+                                <td>Convenience Store Clerk</td>
+                            </tr>
+                        </table>
+                    </article>
+                </div>
+                <div id="MyCertifications">
+                    <article>
+                        <h2>My Certifications</h2>
+                        <ul>
+                            <li>Currently working on a CompTIA Security+ Certificate</li>
+                        </ul>
+                    </article>
+                </div>
+                <div id="Resume">
+
                     <h2>Link to my Resume</h2>
                     <a id="ResumeLink" target="_blank" rel="noopener noreferrer"
                         href="https://docs.google.com/document/d/e/2PACX-1vSLuiwWxE7XHRBcuYp5hN5DxedzDsOuC9NhH-afiBvaxSxEq1MC4FqDYKFgGMxn8umncIHLcv7ZmQzZ/pub"
@@ -153,11 +170,10 @@
                             src="https://www.freeiconspng.com/uploads/document-icon-19.png" width="130" height="130"
                             loading="lazy" alt="Png Document Icon" /></a>
 
-                
+
+                </div>
             </div>
         </div>
-
-
         <div id="ContactMe">
             <h2>Contact Me</h2>
             <form>
