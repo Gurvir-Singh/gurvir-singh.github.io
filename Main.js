@@ -78,4 +78,12 @@ expButton.onclick = dispExp;
 certButton.onclick = dispCert;
 resumeButton.onclick = dispResume;
 
+contactSubmitButton = document.getElementById("submitButton");
+
+function displayWIPPopup() {
+    window.alert("This feature is still under development, sorry!")
+}
+
+contactSubmitButton.onclick = displayWIPPopup;
+
 //dynamicConentDiv.appendChild();
