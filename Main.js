@@ -20,7 +20,17 @@ expContent.style.display = "none";
 certContent.style.display = "none";
 resumeConent.style.display = "none";
 
+skillsButton.style.cursor="default";
+expButton.style.cursor="pointer";
+certButton.style.cursor="pointer";
+resumeButton.style.cursor="pointer";
+
 function dispSkills() {
+    skillsButton.style.cursor="default";
+    expButton.style.cursor="pointer";
+    certButton.style.cursor="pointer";
+    resumeButton.style.cursor="pointer";
+
     skillsContent.style.display = "block";
     expContent.style.display = "none";
     certContent.style.display = "none";
@@ -28,6 +38,11 @@ function dispSkills() {
 }
 
 function dispExp() {
+    skillsButton.style.cursor="pointer";
+    expButton.style.cursor="default";
+    certButton.style.cursor="pointer";
+    resumeButton.style.cursor="pointer";
+
     skillsContent.style.display = "none";
     expContent.style.display = "block";
     certContent.style.display = "none";
@@ -35,6 +50,11 @@ function dispExp() {
 }
 
 function dispCert() {
+    skillsButton.style.cursor="pointer";
+    expButton.style.cursor="pointer";
+    certButton.style.cursor="default";
+    resumeButton.style.cursor="pointer";
+
     skillsContent.style.display = "none";
     expContent.style.display = "none";
     certContent.style.display = "block";
@@ -42,6 +62,11 @@ function dispCert() {
 }
 
 function dispResume() {
+    skillsButton.style.cursor="pointer";
+    expButton.style.cursor="pointer";
+    certButton.style.cursor="pointer";
+    resumeButton.style.cursor="default";
+
     skillsContent.style.display = "none";
     expContent.style.display = "none";
     certContent.style.display = "none";
