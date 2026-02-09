@@ -78,7 +78,7 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+#submitButton {
   background-color: #15b4c5;
   color: white;
   padding: 12px 20px;
